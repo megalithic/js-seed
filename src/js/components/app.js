@@ -6,6 +6,7 @@ var React = require('react');
 var App = React.createClass({
   render: function () {
     var toolingList = this.props.tooling.map(function(tool, i) {
+      console.log(tool);
       return <li key={tool.id}>{tool.id}. {tool.text}</li>
     });
     return (

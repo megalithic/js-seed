@@ -1,3 +1,4 @@
+var gulp = require('gulp');
 var karma = require('gulp-karma');
 
 gulp.task('test', function() {

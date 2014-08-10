@@ -7,6 +7,7 @@ describe('Main', function () {
     var container = document.createElement('div');
     container.id = 'content';
     document.body.appendChild(container);
+    console.log("document is", document);
 
     App = require('../../../src/scripts/components/app.jsx');
     component = App();

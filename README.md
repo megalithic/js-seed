@@ -1,7 +1,7 @@
-JS Starter Kit
+JS Seed
 ============
 
-A somewhat opinionated JS Starter Kit relying on Gulp + Browserify. A lot of this was born out of this [blog post](http://viget.com/extend/gulp-browserify-starter-faq). Please refer to it for more info on the libs used for creating this lil slice of JS development heaven.
+A somewhat opinionated JS Seed/Starter Kit relying on Gulp + Browserify. A lot of this was born out of this [blog post](http://viget.com/extend/gulp-browserify-starter-faq). Please refer to it for more info on the libs used for creating this lil slice of JS development heaven.
 
 I mentioned "opinionated" because I like React JS right now and this 'starter
 kit' builds out a React and Re(Flux)-ready app
@@ -19,6 +19,8 @@ Includes the following tools, tasks, and workflows:
 - Image optimization
 - Error Notifications in Notification Center
 - Superagent (from npm) for super clean and lightweight AJAX business
+- Karma for test running (Jasmine for writing your tests)
+- project-based .vimrc (`<leader>t` gets you test running if you prefer not to have auto-watched test running).
 
 If you've never used Node or npm before, you'll need to install Node.
 If you use homebrew, do:
@@ -55,3 +57,8 @@ gulp
 This will create and run the task defined in `gulpfile.js`. If you're on OS X,
 and have Chrome installed, a window will open displaying the demo page. If not,
 you can visit http://localhost:3002 to view the test page.
+
+### Run tests
+```
+gulp test
+```

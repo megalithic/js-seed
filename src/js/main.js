@@ -14,7 +14,8 @@ var propsToInitWith = {
     {id: 8, text: 'Non common-js jquery plugin'},
     {id: 9, text: 'Npm jquery'},
     {id: 10, text: 'Npm react'},
-    {id: 11, text: 'Npm es6'}
+    {id: 11, text: 'Npm es6'},
+    {id: 12, text: 'Karma / Jasmine for testing'}
   ]
 };
 

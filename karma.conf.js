@@ -26,7 +26,7 @@ module.exports = function(config) {
     preprocessors: { },
 
     // test results reporter to use
-    // possible values: 'dots', 'progress'
+    // possible values: 'spec', dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
     reporters: ['spec'],
 
@@ -41,15 +41,25 @@ module.exports = function(config) {
     logLevel: config.LOG_INFO,
 
     // enable / disable watching file and executing tests whenever any file changes
-    autoWatch: true,
+    autoWatch: false,
+
+    // Start these browsers, currently available:
+    // - Chrome
+    // - ChromeCanary
+    // - Firefox
+    // - Opera
+    // - Safari (only Mac)
+    // - PhantomJS
+    // - IE (only Windows)
+    captureTimeout: 60000,
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     browsers: [
-      'PhantomJS'
-      // , 'Chrome'
-      // , 'Firefox'
-      // , 'Safari'
+      // 'PhantomJS',
+      'Chrome',
+      // 'Firefox',
+      // 'Safari'
     ],
 
     // Continuous Integration mode
