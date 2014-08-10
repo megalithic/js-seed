@@ -26,10 +26,12 @@ module.exports = function(config) {
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
-    preprocessors: { },
+    // preprocessors: {
+    //   'test/spec/components/**/*.js': ['reactify']
+    // },
 
     // test results reporter to use
-    // possible values: 'spec', dots', 'progress'
+    // possible values: 'spec', 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
     reporters: ['spec'],
 
