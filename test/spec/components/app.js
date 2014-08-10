@@ -1,3 +1,5 @@
+/** @jsx React.DOM */
+
 'use strict';
 
 describe('Main', function () {
@@ -5,11 +7,12 @@ describe('Main', function () {
 
   beforeEach(function () {
     var container = document.createElement('div');
-    container.id = 'content';
+    container.id = 'main';
     document.body.appendChild(container);
     console.log("document is", document);
 
-    App = require('../../../src/scripts/components/app.jsx');
+    App = require('../../src/js/components/app.js');
+    console.log("App is", App);
     component = App();
   });
 

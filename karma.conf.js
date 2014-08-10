@@ -10,11 +10,14 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      './src/js/actions/*.js',
-      './src/js/components/*.js',
-      './src/js/stores/*.js',
-      './src/js/dispatcher/*.js',
-      './src/js/constants/*.js',
+      // './src/js/actions/*.js',
+      // './src/js/components/*.js',
+      // './src/js/stores/*.js',
+      // './src/js/dispatcher/*.js',
+      // './src/js/constants/*.js',
+      './test/helpers/**/*.js',
+      './build/app.js',
+      './src/vendor/**/.js',
       './test/spec/**/*.js'
     ],
 
@@ -41,7 +44,7 @@ module.exports = function(config) {
     logLevel: config.LOG_INFO,
 
     // enable / disable watching file and executing tests whenever any file changes
-    autoWatch: false,
+    autoWatch: true,
 
     // Start these browsers, currently available:
     // - Chrome
@@ -57,7 +60,7 @@ module.exports = function(config) {
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     browsers: [
       'PhantomJS',
-      // 'Chrome',
+      'Chrome',
       // 'Firefox',
       // 'Safari'
     ],

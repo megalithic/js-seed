@@ -1,12 +1,20 @@
 /** @jsx React.DOM */
 
-var React = require('react');
-// var Table = require('./table');
+'use strict';
+
+var React = require('react/addons');
+var ReactTransitionGroup = React.addons.TransitionGroup;
+
+// Export React so the devtools can find it
+(window !== window.top ? window.top : window).React = React;
+
+// CSS
+// require('../../styles/reset.css');
+// require('../../styles/main.css');
 
 var App = React.createClass({
   render: function () {
     var toolingList = this.props.tooling.map(function(tool, i) {
-      console.log(tool);
       return <li key={tool.id}>{tool.id}. {tool.text}</li>
     });
     return (

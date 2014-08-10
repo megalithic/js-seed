@@ -1,3 +1,7 @@
+/** @jsx React.DOM */
+
+'use strict';
+
 var App = require('./components/app');
 var React = require('react');
 
@@ -19,4 +23,5 @@ var propsToInitWith = {
   ]
 };
 
+console.log("document from main.js is", document);
 React.renderComponent(App(propsToInitWith), document.getElementById('main'));
