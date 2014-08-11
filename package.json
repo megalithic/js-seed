@@ -1,10 +1,10 @@
 {
-  "name": "gulp-starter",
-  "version": "0.1.1",
-  "description": "Gulp starter with common tasks and scenarios",
+  "name": "js-seed",
+  "version": "0.1.0",
+  "description": "Starter repo for JS development (geared towards React/Compass)",
   "repository": {
     "type": "git",
-    "url": "git://github.com/greypants/gulp-starter.git"
+    "url": "git://github.com/megalithic/js-seed.git"
   },
   "browser": {
     "plugin": "./src/js/vendor/jquery-plugin.js"
