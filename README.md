@@ -62,3 +62,9 @@ you can visit http://localhost:3002 to view the test page.
 ```
 gulp test
 ```
+
+### TODO
+
+Like with all projects, there is always something to be done/added/fixed.
+
+- Get karma running tests.

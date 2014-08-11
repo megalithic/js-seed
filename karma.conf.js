@@ -11,13 +11,13 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       './test/helpers/**/*.js',
+      './src/js/main.js',
       './src/js/vendor/**/*.js',
-      './build/app.js',
-      // './src/js/actions/*.js',
-      // './src/js/components/*.js',
-      // './src/js/stores/*.js',
-      // './src/js/dispatcher/*.js',
-      // './src/js/constants/*.js',
+      './src/js/actions/*.js',
+      './src/js/components/*.js',
+      './src/js/stores/*.js',
+      './src/js/dispatcher/*.js',
+      './src/js/constants/*.js',
       './test/spec/**/*.js'
     ],
 
