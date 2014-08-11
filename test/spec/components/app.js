@@ -10,7 +10,7 @@ describe('Main', function () {
     container.id = 'main';
     document.body.appendChild(container);
 
-    App = require('../../src/js/components/app.js');
+    App = require('../../../src/js/components/app.js');
     console.log("App is", App);
     component = App();
   });
