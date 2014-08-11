@@ -11,8 +11,7 @@ describe('Main', function () {
     document.body.appendChild(container);
     console.log("document is", document);
 
-    App = require('../../src/js/components/app.js');
-    console.log("App is", App);
+    App = require('../../../src/js/components/app.js');
     component = App();
   });
 

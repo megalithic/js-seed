@@ -1,15 +1,24 @@
 var gulp = require('gulp');
-var karma = require('gulp-karma');
+var jest = require('gulp-jest');
 
-gulp.task('test', function() {
-  // Be sure to return the stream
-  // NOTE: Using the fake './foobar' so as to run the files
-  // listed in karma.conf.js INSTEAD of what was passed to
-  // gulp.src !
-  return gulp.src('./foobar')
-    .pipe(karma({
-      configFile: 'karma.conf.js',
-      action: 'run'
+gulp.task('test', function () {
+  return gulp.src('build/app.js')
+    .pipe(jest({
+      rootDir: __dirname + "/../../",
+      scriptPreprocessor: "./test/helpers/preprocessor.js",
+      unmockedModulePathPatterns: [
+        "./node_modules/react"
+      ],
+      testDirectoryName: "test",
+      testPathIgnorePatterns: [
+        "./node_modules",
+        "./test/helpers"
+      ],
+      moduleFileExtensions: [
+        "js",
+        "json",
+        "react"
+      ]
     }))
     .on('error', function(err) {
       // Make sure failed tests cause gulp to exit non-zero
