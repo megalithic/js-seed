@@ -23,6 +23,23 @@
       ]
     }
   },
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "scriptPreprocessor": "./test/helpers/preprocessor.js",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ],
+    "testDirectoryName": "test",
+    "testPathIgnorePatterns": [
+      "./node_modules",
+      "./test/helpers"
+    ],
+    "moduleFileExtensions": [
+      "js"
+    ]
+  },
   "devDependencies": {
     "browser-sync": "~0.8.2",
     "browserify": "~3.36.0",
@@ -34,20 +51,17 @@
     "gulp-compass": "~1.1.8",
     "gulp-imagemin": "~0.1.5",
     "gulp-jasmine": "^0.3.0",
-    "gulp-karma": "0.0.4",
     "gulp-notify": "~1.2.4",
     "gulp-open": "~0.2.8",
     "gulp-react": "^0.5.0",
+    "gulp-run": "^1.6.3",
+    "gulp-shell": "^0.2.9",
     "gulp-util": "~2.2.14",
-    "jasmine-react": "^1.1.0",
-    "karma": "^0.12.21",
-    "karma-chrome-launcher": "^0.1.4",
-    "karma-jasmine": "^0.1.5",
-    "karma-phantomjs-launcher": "^0.1.4",
-    "karma-react-preprocessor": "0.0.2",
-    "karma-spec-reporter": "0.0.13",
+    "jest": "^0.1.37",
+    "jest-cli": "^0.1.18",
     "phantomjs": "^1.9.7-15",
     "pretty-hrtime": "~0.2.1",
+    "react-tools": "^0.11.1",
     "reactify": "^0.14.0",
     "reflux": "^0.1.6",
     "superagent": "^0.18.2",
