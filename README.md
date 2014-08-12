@@ -19,7 +19,7 @@ Includes the following tools, tasks, and workflows:
 - Image optimization
 - Error Notifications in Notification Center
 - Superagent (from npm) for super clean and lightweight AJAX business
-- Karma for test running (Jasmine for writing your tests)
+- Jest for test running (Jasmine for writing your tests)
 - project-based .vimrc (`<leader>t` gets you test running if you prefer not to have auto-watched test running).
 
 If you've never used Node or npm before, you'll need to install Node.
