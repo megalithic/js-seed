@@ -8,7 +8,7 @@ var ReactTransitionGroup = React.addons.TransitionGroup;
 // Export React so the devtools can find it
 (window !== window.top ? window.top : window).React = React;
 
-// CSS
+// CSS, TODO: can include compontent specific CSS here
 // require('../../styles/reset.css');
 // require('../../styles/main.css');
 

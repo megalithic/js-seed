@@ -1,18 +1,15 @@
 /** @jsx React.DOM */
 
-'use strict';
+jest.dontMock('../../../src/js/components/app.js');
 
 describe('Main', function () {
   var App, component;
 
   beforeEach(function () {
-    var container = document.createElement('div');
-    container.id = 'main';
-    document.body.appendChild(container);
-    console.log("document is", document);
-
+    var React = require('react/addons');
+    var TestUtils = React.addons.TestUtils;
     App = require('../../../src/js/components/app.js');
-    component = App();
+    component = TestUtils.renderIntoDocument(App({tooling: [], title: "Test Title"}));
   });
 
   it('should create a new instance of App', function () {

@@ -26,6 +26,18 @@
   "scripts": {
     "test": "jest"
   },
+  "jest": {
+    "scriptPreprocessor": "./test/helpers/preprocessor.js",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ],
+    "testDirectoryName": "test",
+    "testPathIgnorePatterns": [
+      "./node_modules",
+      "./test/helpers"
+    ],
+    "moduleFileExtensions": [ "js" ]
+  },
   "devDependencies": {
     "browser-sync": "~0.8.2",
     "browserify": "~3.36.0",

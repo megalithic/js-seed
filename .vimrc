@@ -1,5 +1,5 @@
 function! RunKarmaTests()
-  execute '!gulp test'
+  execute '!npm test'
   " let path_without_extension=substitute(@%, '.js', '', '')
   " if path_without_extension=~"[tests]"
   "   execute '!./node_modules/.bin/intern-runner --config=tests/intern suites=' . path_without_extension
