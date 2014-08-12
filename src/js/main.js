@@ -2,8 +2,8 @@
 
 'use strict';
 
-var App = require('./components/app');
 var React = require('react');
+var App = require('./components/app');
 
 var propsToInitWith = {
   title: "Gulp starter kit tooling",

@@ -10,14 +10,14 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      // './src/js/actions/*.js',
-      // './src/js/components/*.js',
-      // './src/js/stores/*.js',
-      // './src/js/dispatcher/*.js',
-      // './src/js/constants/*.js',
       './test/helpers/**/*.js',
-      './build/app.js',
-      './src/vendor/**/.js',
+      './src/js/main.js',
+      './src/js/vendor/**/*.js',
+      './src/js/actions/*.js',
+      './src/js/components/*.js',
+      './src/js/stores/*.js',
+      './src/js/dispatcher/*.js',
+      './src/js/constants/*.js',
       './test/spec/**/*.js'
     ],
 
@@ -26,10 +26,17 @@ module.exports = function(config) {
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
-    preprocessors: { },
+    preprocessors: {
+      './src/js/**/*.js': ['react']
+    },
+    reactPreprocessor: {
+      transformPath: function(path) {
+        return path.replace(/\.jsx$/, '.js');
+      }
+    },
 
     // test results reporter to use
-    // possible values: 'spec', dots', 'progress'
+    // possible values: 'spec', 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
     reporters: ['spec'],
 
@@ -60,7 +67,7 @@ module.exports = function(config) {
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     browsers: [
       'PhantomJS',
-      'Chrome',
+      // 'Chrome',
       // 'Firefox',
       // 'Safari'
     ],

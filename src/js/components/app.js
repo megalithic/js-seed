@@ -2,8 +2,9 @@
 
 'use strict';
 
-var React = require('react/addons');
-var ReactTransitionGroup = React.addons.TransitionGroup;
+// var React = require('react/addons');
+var React = require('react');
+// var ReactTransitionGroup = React.addons.TransitionGroup;
 
 // Export React so the devtools can find it
 (window !== window.top ? window.top : window).React = React;

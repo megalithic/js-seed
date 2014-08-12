@@ -1,10 +1,10 @@
 {
-  "name": "gulp-starter",
-  "version": "0.1.1",
-  "description": "Gulp starter with common tasks and scenarios",
+  "name": "js-seed",
+  "version": "0.1.0",
+  "description": "Starter repo for JS development (geared towards React/Compass)",
   "repository": {
     "type": "git",
-    "url": "git://github.com/greypants/gulp-starter.git"
+    "url": "git://github.com/megalithic/js-seed.git"
   },
   "browser": {
     "plugin": "./src/js/vendor/jquery-plugin.js"
@@ -36,7 +36,7 @@
       "./node_modules",
       "./test/helpers"
     ],
-    "moduleFileExtensions": [ "js" ]
+    "moduleFileExtensions": ["js"]
   },
   "devDependencies": {
     "browser-sync": "~0.8.2",
@@ -61,9 +61,9 @@
     "reactify": "^0.14.0",
     "reflux": "^0.1.6",
     "superagent": "^0.18.2",
+    "underscore": "^1.6.0",
     "vinyl-source-stream": "~0.1.1",
-    "watchify": "~0.10.1",
-    "gulp-jest": "git+https://github.com/Dakuan/gulp-jest"
+    "watchify": "~0.10.1"
   },
   "dependencies": {
     "jquery": "~2.1.0",
