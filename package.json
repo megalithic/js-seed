@@ -36,7 +36,9 @@
       "./node_modules",
       "./test/helpers"
     ],
-    "moduleFileExtensions": ["js"]
+    "moduleFileExtensions": [
+      "js"
+    ]
   },
   "devDependencies": {
     "browser-sync": "~0.8.2",
@@ -52,6 +54,8 @@
     "gulp-notify": "~1.2.4",
     "gulp-open": "~0.2.8",
     "gulp-react": "^0.5.0",
+    "gulp-run": "^1.6.3",
+    "gulp-shell": "^0.2.9",
     "gulp-util": "~2.2.14",
     "jest": "^0.1.37",
     "jest-cli": "^0.1.18",
