@@ -62,3 +62,7 @@ you can visit http://localhost:3002 to view the test page.
 ```
 gulp test
 ```
+
+### TODO
+
+- speed up those Jest tests.
