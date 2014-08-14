@@ -60,11 +60,11 @@ you can visit http://localhost:3002 to view the test page.
 
 ### Run tests
 ```
+# NOTE: ensure `gulp` is running already
 gulp test
 ```
 
 ### TODO
 
-- speed up those Jest tests.
 - migrate to stylus instead of compass (less dependency on ruby)
 - add more stubbed out modules for flux/reflux/fluxxor architecture
