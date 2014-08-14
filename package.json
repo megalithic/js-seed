@@ -29,7 +29,7 @@
   "jest": {
     "scriptPreprocessor": "./test/helpers/preprocessor.js",
     "unmockedModulePathPatterns": [
-      "<rootDir>/node_modules/react"
+      "./node_modules/react"
     ],
     "testDirectoryName": "test",
     "testPathIgnorePatterns": [

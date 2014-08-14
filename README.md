@@ -66,3 +66,5 @@ gulp test
 ### TODO
 
 - speed up those Jest tests.
+- migrate to stylus instead of compass (less dependency on ruby)
+- add more stubbed out modules for flux/reflux/fluxxor architecture
