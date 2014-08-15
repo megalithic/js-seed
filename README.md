@@ -12,6 +12,8 @@ Includes the following tools, tasks, and workflows:
 - Watchify (caching version of browserify for super fast rebuilds)
 - Compass
 - React (JSX compilation to JS)
+  - Flux'ish structure
+  - react-router and some basic routes
 - jQuery (from npm)
 - Non common-js vendor code (like a jQuery plugin)
 - LiveReload
@@ -56,7 +58,8 @@ gulp
 
 This will create and run the task defined in `gulpfile.js`. If you're on OS X,
 and have Chrome installed, a window will open displaying the demo page. If not,
-you can visit http://localhost:3002 to view the test page.
+you can visit http://localhost:3002 to view the test page. Browsersync keeps
+all of your source changes in sync with the browser in a livereload fashion.
 
 ### Run tests
 ```
@@ -66,5 +69,5 @@ gulp test
 
 ### TODO
 
-- migrate to stylus instead of compass (less dependency on ruby)
 - add more stubbed out modules for flux/reflux/fluxxor architecture
+- fix issue with error causing gulp to no longer try and re-reactify stuffs
