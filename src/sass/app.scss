@@ -3,6 +3,25 @@ body {
   background:#eee;
   color: #555;
   font-family: sans-serif;
+  h1 {
+    display:inline-block;
+    margin:0;
+    vertical-align:middle;
+  }
+  nav {
+    display:inline-block;
+    vertical-align:sub;
+    ul {
+      margin:0;
+      li {
+        display:inline-block;
+        margin-right:1em;
+      }
+    }
+  }
+  h2 {
+    text-transform:capitalize;
+  }
   ul {
     list-style:none;
     padding:0 1em;
