@@ -63,7 +63,9 @@ all of your source changes in sync with the browser in a livereload fashion.
 
 ### Run tests
 ```
-# NOTE: ensure `gulp` is running already
+# NOTE: ensure `gulp` is running already. There is a 22-32s warm up time for
+the first test run. There-after the single test included takes 3-4s to run.
+
 gulp test
 ```
 
