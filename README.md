@@ -26,6 +26,7 @@ It includes the following tools, tasks, and workflows:
 - Jest for test running (Jasmine for writing your tests)
 - Project-based .vimrc (`<leader>t` runs your tests if you don't have
     watching for your test-file changes turned on).
+- Uses Pure CSS from Yahoo's CDN
 
 If you've never used Node or npm before, you'll need to install Node.
 If you use homebrew, do:
