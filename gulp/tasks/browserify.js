@@ -24,7 +24,8 @@ gulp.task('browserify', function() {
 		extensions: ['.js', '.jsx'],
 		// Enable source maps!
 		debug: true
-	});
+	})
+  .transform('reactify');
 
 	var bundle = function() {
 		// Log when bundling starts
