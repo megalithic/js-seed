@@ -2,12 +2,12 @@
 
 var React = require('react');
 
-var Index = React.createClass({
+var Home = React.createClass({
   render: function() {
     var tooling = [
       {id: 1, text: 'Browserify-shim'},
       {id: 2, text: 'Browserify / Watchify'},
-      {id: 3, text: 'React'},
+      {id: 3, text: 'React (via Reactify transforms)'},
       {id: 4, text: 'Compass'},
       {id: 5, text: 'SASS'},
       {id: 6, text: 'Image optimization'},
@@ -24,12 +24,13 @@ var Index = React.createClass({
     });
 
     return (
-      <div>
-        <h2>{this.props.name}</h2>
+      <article>
+        <h2 className="content-subhead">{this.props.name}</h2>
+        <p>So as you can see here we have a listing of stuff</p>
         <ul> {toolingList} </ul>
-      </div>
+      </article>
     );
   }
 });
 
-module.exports = Index;
+module.exports = Home;

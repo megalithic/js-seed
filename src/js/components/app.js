@@ -42,23 +42,27 @@ var App = React.createClass({
     }
     return (
       <div className={klass}>
-        <h1>JS-Seed</h1>
-        <nav>
-          <ul>
-            <li><Link to="welcome">Welcome</Link></li>
-            <li><Link to="goodbye">Goodbye</Link></li>
-          </ul>
-        </nav>
-        {this.renderRightNav()}
+        <header className="header">
+          <h1>JS-Seed</h1>
+          <nav className="pure-menu pure-menu-open pure-menu-horizontal">
+            <ul>
+              <li><Link to="home">Home</Link></li>
+              <li><Link to="about">About</Link></li>
+              {this.renderRightNav()}
+            </ul>
+          </nav>
+        </header>
 
-        {this.props.activeRouteHandler()}
+        <section className="content">
+          {this.props.activeRouteHandler()}
+        </section>
       </div>
     );
   },
   renderRightNav: function() {
     return (this.state.auth.authenticated) ?
-      <li><button onClick={this.logout}>Logout</button></li> :
-      <li><button onClick={this.signIn}>Sign in</button></li>;
+      <li><a onClick={this.logout}>Logout</a></li> :
+      <li><a onClick={this.signIn}>Sign in</a></li>;
   }
 });
 

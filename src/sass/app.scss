@@ -1,33 +1,76 @@
 body {
   -webkit-font-smoothing: antialiased;
-  background:#eee;
+  background:#fff;
   color: #555;
   font-family: sans-serif;
-  h1 {
-    display:inline-block;
-    margin:0;
-    vertical-align:middle;
-  }
-  nav {
-    display:inline-block;
-    vertical-align:sub;
-    ul {
-      margin:0;
-      li {
-        display:inline-block;
-        margin-right:1em;
+  .header {
+    margin: 0;
+    color: #333;
+    text-align: center;
+    padding: 2.5em 2em;
+    border-bottom: 1px solid #eee;
+    h1 {
+      margin: 0.2em 0;
+      font-size: 3em;
+      font-weight: 300;
+      text-align:center;
+      color:#333;
+      text-transform:uppercase;
+    }
+    nav {
+      display:inline-block;
+      vertical-align:sub;
+      ul {
+        margin:0;
+        li {
+          display:inline-block;
+          margin-right:1em;
+        }
       }
     }
   }
-  h2 {
-    text-transform:capitalize;
-  }
-  ul {
-    list-style:none;
-    padding:0 1em;
-    li {
-      margin:0;
-      padding:0;
+  .content {
+    margin: 0 auto;
+    padding: 0 2em;
+    max-width: 800px;
+    margin-bottom: 50px;
+    line-height: 1.6em;
+    h2 {
+      text-transform:capitalize;
+      font-weight: 300;
+      color: #ccc;
+      padding: 0;
+      margin-top: 0;
+      &.content-subhead {
+        margin: 50px 0 20px 0;
+        font-weight: 300;
+        color: #888;
+      }
     }
+    ul {
+      list-style:none;
+      padding:0 1em;
+      li {
+        margin:0;
+        padding:0;
+      }
+    }
+  }
+
+  // handle browserSync styling to just look a bit nicer
+  #__bs_notify__ {
+    color: rgba(0,0,0,.6) !important;
+    padding: 10px !important;
+    display: none;
+    font-family: sans-serif;
+    position: fixed;
+    z-index: 9999;
+    top: 0px;
+    bottom: 0px;
+    right:0;
+    left:0;
+    max-height:19px;
+    border-radius:0 !important;
+    background: rgba(0,0,0,.05) !important;
   }
 }
