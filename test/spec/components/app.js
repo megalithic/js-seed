@@ -3,13 +3,13 @@
 jest.dontMock('../../../src/js/components/app.js');
 
 describe('Main', function () {
-  var App, component;
+  var App, component, React, TestUtils;
 
   beforeEach(function () {
-    var React = require('react/addons');
-    var TestUtils = React.addons.TestUtils;
+    React = require('react/addons');
+    TestUtils = React.addons.TestUtils;
     App = require('../../../src/js/components/app.js');
-    component = TestUtils.renderIntoDocument(App({tooling: [], title: "Test Title"}));
+    component = TestUtils.renderIntoDocument(App());
   });
 
   it('should create a new instance of App', function () {

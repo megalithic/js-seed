@@ -15,14 +15,18 @@ var source       = require('vinyl-source-stream');
 
 gulp.task('browserify', function() {
 
-	var bundleMethod = global.isWatching ? watchify : browserify;
+	var bundleMethod = watchify;//global.isWatching ? watchify : browserify;
 
 	var bundler = bundleMethod({
 		// Specify the entry point of your app
 		entries: ['./src/js/main.js'],
+    // Add file extentions to make optional in your requires
+    extensions: ['.js'],
 		// Enable source maps!
 		debug: true
 	});
+
+  bundler.transform('reactify');
 
 	var bundle = function() {
 		// Log when bundling starts
@@ -37,15 +41,12 @@ gulp.task('browserify', function() {
 			// desired output filename here.
 			.pipe(source('app.js'))
 			// Specify the output destination
-			.pipe(gulp.dest('./build/'))
+			.pipe(gulp.dest('./build'))
 			// Log when bundling completes!
 			.on('end', bundleLogger.end);
 	};
 
-	if(global.isWatching) {
-		// Rebundle with watchify on changes.
-		bundler.on('update', bundle);
-	}
+  bundler.on('update', bundle);
 
 	return bundle();
 });
