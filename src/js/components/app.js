@@ -61,8 +61,8 @@ var App = React.createClass({
   },
   renderRightNav: function() {
     return (this.state.auth.authenticated) ?
-      <li><a onClick={this.logout}>Logout</a></li> :
-      <li><a onClick={this.signIn}>Sign in</a></li>;
+      <li><a href="#" title="Logout" onClick={this.logout}>Logout</a></li> :
+      <li><a href="#" title="Sign In" onClick={this.signIn}>Sign in</a></li>;
   }
 });
 
